@@ -3,8 +3,7 @@
   "public": true,
 
   "builds": [
-    { "src": "dist/**", "use": "@vercel/static" }
-  ],
+    { "src": "dist/**/*", "use": "@vercel/static" }  ],
 
   "rewrites": [
     { "source": "/service-worker.js", "destination": "/service-worker.js" },
