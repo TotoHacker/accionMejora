@@ -164,7 +164,7 @@ export default function App() {
             onClick={() => window.scrollTo({ top: 600, behavior: "smooth" })}
             className="mt-8 px-8 py-3 bg-yellow-400 text-gray-900 rounded-full font-bold hover:scale-105 transition"
           >
-            Ver la Galería
+            Ver la Galería JAJAJAJAJAJAJ
           </button>
         </div>
       </header>
