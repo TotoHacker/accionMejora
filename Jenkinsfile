@@ -6,16 +6,16 @@ pipeline {
   }
 
   environment {
-    VERCEL_TOKEN = credentials('vercel-token')
-    VERCEL_ORG = "tu-org"
-    VERCEL_PROJECT = "pokemon-pwa"
+    VERCEL_TOKEN = credentials('MrAnAlNlyFfjsru96UNEVY9W')
+    VERCEL_ORG = "totohackers-projects"
+    VERCEL_PROJECT = "accion-mejora"
   }
 
   stages {
 
     stage('Checkout') {
       steps {
-        git url: 'https://github.com/tu/repo.git', branch: 'main'
+        git url: 'https://github.com/TotoHacker/accionMejora', branch: 'main'
       }
     }
 
