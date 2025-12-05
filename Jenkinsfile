@@ -17,22 +17,22 @@ pipeline {
 
         stage('Install Node & Dependencies') {
             steps {
-                sh 'node -v || true'
-                sh 'npm install'
+                bat 'node -v'
+                bat 'npm install'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'npm run build'
+                bat 'npm run build'
             }
         }
 
         stage('Deploy to Vercel') {
             steps {
-                sh '''
+                bat '''
                     npm install -g vercel
-                    vercel --token=$VERCEL_TOKEN --prod --yes
+                    vercel --token=%VERCEL_TOKEN% --prod --yes
                 '''
             }
         }
